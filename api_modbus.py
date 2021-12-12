@@ -1,25 +1,3 @@
-'''
-    API simples para comunicação com servidor Modbus
-
-    Foi utilizado um simulador Modbus (ELipse Modbus Simulator).
-    A API usa o Modbus que estiver ouvindo na porta configurada (padrão 5020).
-    Caso necessário, mudar a variável porta_modbus para outra porta.
-    A cada escrita/leitura, é gerado uma informação no log.txt.
-
-    Dependências necessárias para funcionamento da API:
-
-    - pip install flask
-    - pip install pymodbus
-    - pip install flask_cors
-
-    Abrir o arquivo vw_modbus.html para testar a API.
-    O arquivo html foi criado com base nas duas tarefas da avaliação.
-
-    Para iniciar esta API, executar no cmd:
-
-    - python sw_modbus.py
-'''
-
 from pymodbus.client.sync import ModbusTcpClient as ModbusClient
 from datetime import datetime
 from flask import Flask
